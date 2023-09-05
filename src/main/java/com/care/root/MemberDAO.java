@@ -1,0 +1,24 @@
+package com.care.root;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class MemberDAO {
+	
+	public MemberDAO(){
+		System.out.println("member dao");
+	}
+	
+	public void test() {
+		System.out.println("dao test ½ÇÇà");
+	}
+	
+	public MemberDTO result() {
+		MemberDTO dto = new MemberDTO();
+		dto.setId("aaa");
+		dto.setName("È«±æµ¿");
+		return dto;
+	}
+	
+	
+}
